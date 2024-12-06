@@ -37,4 +37,14 @@ public class Board {
     public Piece piece (Position position) {
         return pieces[position.getRow()][position.getColumn()];
     }
+
+    //metodo placePiece vai na matriz das pecas, na linha e na coluna, e vai atribuir nessa posicao a peca que veio como argumento
+    //a matriz de pecas (piece) esta declarada no tabuleiro (inicio do codigo)
+    public void placePiece(Piece piece, Position position) {
+        pieces[position.getRow()][position.getColumn()] = piece;
+
+        //informar que a peca não esta mais na posicao nula e sim na posicao informada
+        piece.position = position;
+
+    }
 }
