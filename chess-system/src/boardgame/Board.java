@@ -17,13 +17,15 @@ public class Board {
         pieces = new Piece[rows][columns];
     }
 
+    public int getRows() {
+        return rows;
+    }
+
+
     public int getColumns() {
         return columns;
     }
 
-    public int getRows() {
-        return rows;
-    }
 
     //metodo para retornar a peça dada a uma linha e coluna
     //programacao defensiva para testar
@@ -46,13 +48,26 @@ public class Board {
     //metodo placePiece vai na matriz das pecas, na linha e na coluna, e vai atribuir nessa posicao a peca que veio como argumento
     //a matriz de pecas (piece) esta declarada no tabuleiro (inicio do codigo)
     public void placePiece(Piece piece, Position position) {
-        if (thereIsPiece(position)) {
+        if (thereIsAPiece(position)) {
             throw new BoardException("There is already a piece on position" + position);
         }
         //informar que a peca não esta mais na posicao nula e sim na posicao informada
         //
         pieces[position.getRow()][position.getColumn()] = piece;
         piece.position = position;
+    }
+
+    public Piece removePiece(Position position) {
+        if(!positionExists(position)) {
+            throw new BoardException("Position not on the board");
+        }
+        if (piece(position) == null) {
+            return null;
+        }
+        Piece aux = piece(position);
+        aux.position = null;
+        pieces[position.getRow()][position.getColumn()] = null;
+        return aux;
     }
 
     //metodo auxiliar para testar pela linha e coluna (mais facil do que testar pela posicao)
@@ -65,7 +80,7 @@ public class Board {
         return positionExists(position.getRow(), position.getColumn());
     }
 
-    public boolean thereIsPiece(Position position) {
+    public boolean thereIsAPiece(Position position) {
         if (!positionExists(position)) {
             throw new BoardException("Position not on the board");
         }
