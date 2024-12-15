@@ -18,7 +18,7 @@ public class Program {
         List<ChessPiece> captured = new ArrayList<>();
         //funcao para imprimir as pecas dessa partida UI, e dentro dessa classe foi criado um metodo chamado printBoard, que vai receber
         //a matriz de pecas da partida
-        while (true) {
+        while (!chessMatch.getCheckMate()) {
             try {
                 UI.clearScreen();
                 UI.printMatch(chessMatch, captured);
@@ -43,6 +43,8 @@ public class Program {
                 sc.nextLine();
             }
         }
+        UI.clearScreen();
+        UI.printMatch(chessMatch, captured);
     }
 }
 
