@@ -38,14 +38,13 @@ public class Program {
                 if (capturedPiece != null) {
                     captured.add(capturedPiece);
                 }
-            }
-
-            catch(ChessException | InputMismatchException e){
-                    System.out.println(e.getMessage());
-                    sc.nextLine();
+            } catch (ChessException | InputMismatchException e) {
+                System.out.println(e.getMessage());
+                sc.nextLine();
             }
         }
     }
 }
+
 
 
