@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c551f8-a4ac-4adf-9c54-44f4d3a97609" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chess/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/pieces/Pawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,7 @@
       <workItem from="1734236771670" duration="163000" />
       <workItem from="1734236945867" duration="6856000" />
       <workItem from="1734276079477" duration="137000" />
-      <workItem from="1734276227687" duration="22197000" />
+      <workItem from="1734276227687" duration="23200000" />
     </task>
     <servers />
   </component>
@@ -135,26 +133,6 @@
           <properties class="boardgame.BoardException" package="boardgame" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chess/ChessMatch.java</url>
-          <line>182</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chess/ChessMatch.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chess/ChessMatch.java</url>
-          <line>149</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/chess/ChessMatch.java</url>
-          <line>192</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
